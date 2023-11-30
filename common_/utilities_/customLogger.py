@@ -19,7 +19,7 @@ def logger(level, message, fileName=os.path.join(get_root_dir_name(), '_logsOfMe
                         format="%(asctime)-12s %(levelname)s %(message)s",
                         datefmt="%d-%m-%Y %H:%M:%S")
     if level == "INFO":
-        logging.info(message)
+        logging.info(f"{level}: {message}")
     elif level == "DEBUG":
         logging.debug(message)
     elif level == "WARNING":
